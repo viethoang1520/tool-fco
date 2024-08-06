@@ -1,0 +1,118 @@
+@import '../GlobalStyles/colors.scss';
+
+.header {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     position: fixed;
+     height: 70px;
+     color: #fff;
+     padding: 0 40px;
+     border-bottom: 1px solid $primary-green;
+     background-color: #212121;
+
+     .logo-block {
+          display: flex;
+          align-items: center;
+          width: 250px;
+          font-size: 3rem;
+          font-weight: 400;
+          font-family: "Silkscreen", sans-serif;
+
+          // .tool {}
+
+          .fc {
+               color: $primary-green;
+               font-weight: 900;
+               position: relative;
+
+               .gear {
+                    font-size: 2.8rem;
+                    position: absolute;
+                    top: 6.5px;
+                    right: -26px;
+               }
+          }
+
+     }
+
+     .navbar-block {
+          .navbar-list {
+               display: flex;
+               gap: 30px;
+               align-items: center;
+               height: 100%;
+
+               .navbar-item {
+                    .navbar-link {
+                         color: #fff;
+                         text-decoration: none;
+                         font-size: 2rem;
+                         font-weight: 300;
+                         transition: 0.2s;
+                         position: relative;
+
+                         &.active {
+
+                              &::after {
+                                   content: '_';
+                                   font-weight: 300;
+                                   font-size: 6rem;
+                                   position: absolute;
+                                   bottom: -13px;
+                                   right: 30%;
+                              }
+                         }
+
+                         &:hover {
+                              opacity: 80%;
+                              color: $primary-green;
+                         }
+                    }
+               }
+          }
+     }
+
+     .button-block {
+          width: 300px;
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          .login-item {
+
+               .login-link {
+                    display: inline-block;
+                    text-align: center;
+                    color: #fff;
+                    text-decoration: none;
+                    border: 1px solid $primary-green;
+                    padding: 12px 0;
+                    width: 130px;
+                    border-radius: 25px;
+                    transition: 0.2s;
+
+                    &.login {
+                         color: $primary-green;
+
+                         &:hover {
+                              border-color: #fff;
+                              color: #fff;
+                         }
+                    }
+
+                    &.signup {
+                         background-color: $primary-green;
+                         color: #333;
+
+                         &:hover {
+                              border-color: #fff;
+                              background-color: #fff;
+                         }
+                    }
+
+
+               }
+          }
+     }
+}

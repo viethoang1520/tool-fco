@@ -1,0 +1,80 @@
+@import '../../Components/GlobalStyles/colors.scss';
+
+.home-page {
+     padding-top: 60px;
+     background-color: #333;
+     height: min(720px, 100vh);
+
+     .hero {
+          color: #fff;
+          user-select: none;
+          height: min(640px, 90vh);
+
+          .text-block {
+               height: 85%;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               margin-left: 30px;
+
+               .title {
+                    font-size: 6rem;
+                    font-weight: 400;
+
+                    &.main {
+                         color: $primary-green;
+                         font-size: 12rem;
+                         margin: -12px 0 10px 0;
+                         font-family: "Alumni Sans Inline One", sans-serif;
+                    }
+               }
+
+               .des-list {
+
+                    .des-item {
+                         font-size: 2rem;
+                         position: relative;
+                         margin-left: 50px;
+                         opacity: 90%;
+
+                         .icon {
+                              position: absolute;
+                              top: 0;
+                              left: -35px;
+                         }
+
+                         .text {
+                              margin: 20px 0;
+                              font-weight: 300
+                         }
+                    }
+               }
+
+               .download-button {
+                    margin: 10px 100px;
+                    font-size: 3rem;
+                    width: 300px;
+                    text-align: center;
+                    text-decoration: none;
+                    border: 1px solid $primary-green;
+                    padding: 12px 0;
+                    border-radius: 25px;
+                    transition: 0.2s;
+                    background-color: $primary-green;
+                    color: #333;
+
+                    &:hover {
+                         border-color: #fff;
+                         background-color: #fff;
+                    }
+
+               }
+          }
+
+          .img-des {
+               .photo-hero-1 {
+                    width: 85%;
+               }
+          }
+     }
+}
